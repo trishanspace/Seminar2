@@ -20,6 +20,3 @@ while (number > 999)
 }
 number_therd = number % 10;
 Console.WriteLine($"В числе: {number} третьей цифрой является: {number_therd}");
-
-
-
