@@ -7,46 +7,19 @@
 
 Console.WriteLine("Введите число: ");
 int number = int.Parse(Console.ReadLine());
-if (number > 99 & number < 1000)
+int number_therd = 0;
+
+if (number < 100)
 {
-    int number_therd = number % 10;
-    Console.WriteLine($"Третьим числом является: {number_therd}");
-}
-else if (number > 999)
-{
-    int number_therd = number / 10 % 10;
-    Console.WriteLine($"Третьим числом является: {number_therd}");
+   Console.WriteLine("третьей цифры нет ");
 }
 
-else if (number < 100)
-{
-    Console.WriteLine("третьей цифры нет ");
+while (number > 999)
+{  
+   number --;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+number_therd = number % 10;
+Console.WriteLine($"В числе: {number} третьей цифрой является: {number_therd}");
 
 
 
